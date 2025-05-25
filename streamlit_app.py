@@ -10,79 +10,77 @@ st.set_page_config(
 )
 
 st.markdown("""
-<style>
-/* Title & subtitle styles */
-.title {
-    font-size: 3em;
-    font-weight: bold;
-    color: #FF69B4;
-    text-align: center;
-    margin-bottom: 0.2em;
-}
-.subtitle {
-    font-size: 1.5em;
-    text-align: center;
-    color: #ff4b4b;
-    margin-bottom: 2em;
-}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-/* Message box styles */
-.message-box {
-    background-color: #fff0f5;
-    border-radius: 15px;
-    padding: 30px;
-    margin-top: 30px;
-    box-shadow: 0 0 20px rgba(255,105,180,0.4);
-    font-size: 1.1em;
-    line-height: 1.6em;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-}
-.message-box:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 25px rgba(255,105,180,0.6);
-}
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255,105,180,0.3);
+                border-image: linear-gradient(45deg, #FF69B4, #FFD700) 1;
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(255,105,180,0.6);
+                border-image: linear-gradient(45deg, #FFD700, #FF69B4) 1;
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(255,105,180,0.3);
+                border-image: linear-gradient(45deg, #FF69B4, #FFD700) 1;
+            }
+        }
 
-/* Center image */
-.photo {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
 
-/* Expander animation */
-[data-testid="stExpander"] > summary {
-    font-weight: bold;
-    font-size: 1.3em;
-    color: #FF69B4;
-    animation: pulseGlow 2s ease-in-out infinite;
-    text-align: center;
-    cursor: pointer;
-}
-@keyframes pulseGlow {
-    0% {
-        text-shadow: 0 0 5px #ff4b91, 0 0 10px #ff4b91;
-    }
-    50% {
-        text-shadow: 0 0 15px #ff99c8, 0 0 25px #ff99c8;
-    }
-    100% {
-        text-shadow: 0 0 5px #ff4b91, 0 0 10px #ff4b91;
-    }
-}
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            color: #FF69B4;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+        }
 
-/* Signature (handwritten) */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-.signature {
-    font-family: 'Pacifico', cursive;
-    color: #FF69B4;
-    font-size: 1.8em;
-    text-align: center;
-    margin-top: 20px;
-}
+        .subtitle {
+            font-size: 1.5em;
+            text-align: center;
+            color: #ff4b4b;
+            font-family: 'Quicksand', sans-serif;
+        }
 
-/* Optional: Hide Streamlit footer */
-footer {visibility: hidden;}
-</style>
+        .message-box {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #fff0f5, #ffe6fa);
+            border-radius: 20px;
+            padding: 35px;
+            margin-top: 30px;
+            animation: glow 4s ease-in-out infinite, bounceIn 1.5s ease;
+            border: 3px solid transparent;
+            border-image-slice: 1;
+        }
+
+        .message-box p {
+            font-size: 1.2em;
+            color: #cc3366;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .photo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
 """, unsafe_allow_html=True)
 
 
