@@ -44,7 +44,7 @@ st.balloons()
 # Title and subtitle
 st.markdown('<div class="title">🎉 Happy Birthday, Dear Anila Teacher! 🎂</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and inspiration!</div>', unsafe_allow_html=True)
-
+st.markdown("")
 # Message box
 with st.expander("Message Box ❤️"):
     with st.container():
