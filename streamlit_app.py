@@ -137,7 +137,7 @@ with st.expander("💝 “A Heartfelt Note Just for You – Open With a Smile �
 
 st.markdown("")
 
-col1, col2, col3 = st.columns([1, 2, 1])
+col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown(" js sjks sjs sjs  ")
 with col2:
