@@ -1,19 +1,4 @@
-# 🎈 Blank app template
+# 🎈 Happy Birthday Anila Teacher
 
-A simple Streamlit app template for you to modify!
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
-
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+**🎉 A Streamlit Birthday Surprise App**
+A heartfelt and beautifully animated web app built using Streamlit to celebrate the birthday of a beloved teacher. Featuring glowing messages, confetti balloons, background music, floating hearts, and a warm personal touch — all wrapped in joy and gratitude.
