@@ -98,8 +98,21 @@ st.markdown("""
     > — Mustafa Kemal Atatürk
 """)
 
-if st.button("🎁 Click to Open Your Gift!"):
-    st.success("✨ Surprise! You’ve received our love and admiration wrapped in gratitude 💝")
-    st.image("https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif", width=300)
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    .signature {
+        font-family: 'Pacifico', cursive;
+        color: #FF69B4;
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 20px;
+    }
+    </style>
+
+    <div class="signature">With all my heart, your ever-grateful student 💕</div>
+""", unsafe_allow_html=True)
+
 
 
