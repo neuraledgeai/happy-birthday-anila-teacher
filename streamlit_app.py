@@ -101,9 +101,7 @@ st.markdown("""
 st.markdown("""
     <style>
     .stApp {
-        background-image: url("https://i.imgur.com/8zO4OaN.jpg");
-        background-size: cover;
-        background-attachment: fixed;
+        background: linear-gradient(to bottom right, #ffe6f0, #ffffff);
     }
     </style>
 """, unsafe_allow_html=True)
