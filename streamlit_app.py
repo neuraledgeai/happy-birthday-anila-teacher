@@ -11,15 +11,34 @@ st.set_page_config(
 
 st.markdown("""
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
         @keyframes glow {
             0% {
                 box-shadow: 0 0 10px rgba(255,105,180,0.3);
+                border-image: linear-gradient(45deg, #FF69B4, #FFD700) 1;
             }
             50% {
-                box-shadow: 0 0 30px rgba(255,105,180,0.6);
+                box-shadow: 0 0 25px rgba(255,105,180,0.6);
+                border-image: linear-gradient(45deg, #FFD700, #FF69B4) 1;
             }
             100% {
                 box-shadow: 0 0 10px rgba(255,105,180,0.3);
+                border-image: linear-gradient(45deg, #FF69B4, #FFD700) 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
             }
         }
 
@@ -28,21 +47,32 @@ st.markdown("""
             font-weight: bold;
             color: #FF69B4;
             text-align: center;
+            font-family: 'Quicksand', sans-serif;
         }
 
         .subtitle {
             font-size: 1.5em;
             text-align: center;
             color: #ff4b4b;
+            font-family: 'Quicksand', sans-serif;
         }
 
         .message-box {
-            background-color: #fff0f5;
-            border-radius: 15px;
-            padding: 30px;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #fff0f5, #ffe6fa);
+            border-radius: 20px;
+            padding: 35px;
             margin-top: 30px;
-            box-shadow: 0 0 20px rgba(255,105,180,0.4);
-            animation: glow 3s ease-in-out infinite;
+            animation: glow 4s ease-in-out infinite, bounceIn 1.5s ease;
+            border: 3px solid transparent;
+            border-image-slice: 1;
+        }
+
+        .message-box p {
+            font-size: 1.2em;
+            color: #cc3366;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
 
         .photo {
