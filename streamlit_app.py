@@ -138,7 +138,7 @@ with st.expander("💝 A Heartfelt Note Just for You"):
         st.markdown('<p style="text-align:center; font-size:1.1em; color:#D81B60; font-family:\'Quicksand\', sans-serif;">🎵 Play your birthday music, and then open your surprise below! 🎁</p>', unsafe_allow_html=True)
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
         # This invisible button just triggers session state
-        if st.button("Get Surprise!", key="hidden_continue"):
+        if st.button("Get Birthday Surprise!", key="hidden_continue"):
             st.session_state["show_surprise"] = True
             st.toast("Surpise received! Open it!", icon='😍')
         
