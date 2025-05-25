@@ -85,7 +85,8 @@ with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
         </div>
         ''', unsafe_allow_html=True)
         st.balloons()
-        st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
+        if st.button("▶️ Play Birthday Song"):
+            st.audio("birthday_song.mpeg", loop=True)
 
 
 # Footer
