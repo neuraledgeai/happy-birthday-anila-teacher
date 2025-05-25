@@ -150,7 +150,10 @@ st.markdown("---")
 st.markdown("""
     > *"To teach is to touch a life forever"*  
     > — Jerry Whittle
-    > *"It is the supreme art of the teacher to awaken joy in creative expression and knowledge."* – Albert Einstein
+""")
+st.markdown("""
+    > *"It is the supreme art of the teacher to awaken joy in creative expression and knowledge."*  
+    > — JAlbert Einstein
 """)
 
 st.markdown("""
