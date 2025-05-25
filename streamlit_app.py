@@ -117,7 +117,7 @@ st.markdown('<div class="title">🎉 Happy Birthday, Dear Anila Teacher! 🎂</d
 st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and inspiration!</div>', unsafe_allow_html=True)
 st.markdown("")
 # Message box
-with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
+with st.expander("💝 “A Heartfelt Note Just for You – Open With a Smile 😊"):
     st.markdown('<div style="text-align:center; font-size:2em;">💌</div>', unsafe_allow_html=True)
     with st.container():
         #st.markdown('<div class="message-box">', unsafe_allow_html=True)
@@ -135,7 +135,7 @@ with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
         st.markdown("")
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
 
-if st.button("🎁 Click to Open Your Gift!"):
+if st.button("🎈 Open Your Birthday Surprise Here!"):
     st.success("✨ Surprise! You’ve received our love and admiration wrapped in gratitude 💝")
     st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
 
@@ -145,8 +145,8 @@ st.markdown("---")
 
 # Something amazing to be done here
 st.markdown("""
-    > *"A good teacher is like a candle—it consumes itself to light the way for others."*  
-    > — Mustafa Kemal Atatürk
+    > *"To teach is to touch a life forever"*  
+    > — Jerry Whittle
 """)
 
 st.markdown("""
@@ -162,7 +162,7 @@ st.markdown("""
     }
     </style>
 
-    <div class="signature">With all my heart, your ever-grateful student 💕</div>
+    <div class="signature">💖 Forever grateful, with all my heart 💕</div>
 """, unsafe_allow_html=True)
 
 
