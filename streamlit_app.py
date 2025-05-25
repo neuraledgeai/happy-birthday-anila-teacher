@@ -142,7 +142,13 @@ if st.button("🎁 Click to Open Your Gift!"):
 
 # Footer
 st.markdown("---")
+
 # Something amazing to be done here
+st.markdown("""
+    > *"A good teacher is like a candle—it consumes itself to light the way for others."*  
+    > — Mustafa Kemal Atatürk
+""")
+
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
