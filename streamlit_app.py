@@ -135,9 +135,14 @@ with st.expander("💝 “A Heartfelt Note Just for You – Open With a Smile �
         st.markdown("")
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
 
-if st.button("🎈 Open Your Birthday Surprise Here!"):
-    st.success("✨🎉 Ta-da! ✨ A bundle of gratitude and admiration, wrapped in love — just for you 💝")
-    st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
+st.markdown("")
+
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    if st.button("🎁 Open Your Birthday Surprise!"):
+        st.success("💖 Surprise! You’ve just unwrapped a treasure chest of gratitude and love! 🎁")
+        st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
+
 
 
 # Footer
