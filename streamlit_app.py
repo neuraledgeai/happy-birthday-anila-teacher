@@ -137,12 +137,13 @@ with st.expander("💝 A Heartfelt Note Just for You"):
         st.markdown("")
         st.markdown('<p style="text-align:center; font-size:1.1em; color:#D81B60; font-family:\'Quicksand\', sans-serif;">🎵 Play your birthday music, and then open your surprise below! 🎁</p>', unsafe_allow_html=True)
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
-        # Simulate "expander expanded" using checkbox
-        st.checkbox("I'm ready for my birthday surprise!", key="ready_for_surprise")
+        # This invisible button just triggers session state
+        if st.button("Continue", key="hidden_continue"):
+            st.session_state["show_surprise"] = True
         
 
 st.markdown("")
-if st.session_state.get("ready_for_surprise"):
+if st.session_state.get("show_surprise", False):
     if st.button("🎁 Open Your Birthday Surprise!"):
         st.success("💖 Surprise! You’ve just unwrapped a treasure chest of gratitude and love! 🎁")
         st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
