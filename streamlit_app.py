@@ -170,4 +170,29 @@ st.markdown("""
 
 
 
+floating_hearts = """
+<script>
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.style.position = "fixed";
+    heart.style.bottom = "0px";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.animation = "floatUp 6s linear";
+    heart.style.zIndex = 9999;
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+}, 1000);
+
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+`;
+document.head.appendChild(style);
+</script>
+"""
+html(floating_hearts)
 
