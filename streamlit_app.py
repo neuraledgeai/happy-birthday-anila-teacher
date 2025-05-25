@@ -202,4 +202,5 @@ document.head.appendChild(style);
 """
 html(floating_hearts)
 
-st.markdown('<p style="font-size:0.9em; text-align:center; color:#BDBDBD; font-style:italic;">Made with love and a dash of stardust ✨</p>', unsafe_allow_html=True)
+st.markdown('<p style="font-size:0.9em; text-align:center; color:#BDBDBD; font-style:italic;">Made with love, for someone who truly deserves it.</p>', unsafe_allow_html=True)
+
