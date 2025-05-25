@@ -118,6 +118,7 @@ st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and 
 st.markdown("")
 # Message box
 with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
+    st.markdown('<div style="text-align:center; font-size:2em;">💌</div>', unsafe_allow_html=True)
     with st.container():
         #st.markdown('<div class="message-box">', unsafe_allow_html=True)
         st.markdown('''
@@ -131,6 +132,7 @@ with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
         </div>
         ''', unsafe_allow_html=True)
         st.balloons()
+        st.markdown("")
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
 
 if st.button("🎁 Click to Open Your Gift!"):
