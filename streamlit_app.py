@@ -85,11 +85,11 @@ with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
         </div>
         ''', unsafe_allow_html=True)
         st.balloons()
-        if st.button("▶️ Play Birthday Song"):
-            st.audio("birthday_song.mpeg", loop=True)
+        st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
 
 
 # Footer
 st.markdown("---")
+# Something amazing to be done here
 st.markdown("🎈 Created with ❤️ using Streamlit")
 
