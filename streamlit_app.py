@@ -46,8 +46,9 @@ st.markdown('<div class="title">🎉 Happy Birthday, Dear Anila Teacher! 🎂</d
 st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and inspiration!</div>', unsafe_allow_html=True)
 
 # Message box
-with st.container():
-    st.markdown('<div class="message-box">', unsafe_allow_html=True)
+with st.expander("Message Box ❤️"):
+    with st.container():
+    #st.markdown('<div class="message-box">', unsafe_allow_html=True)
     st.markdown('''
     <div class="message-box">
     <p>Dear Teacher,</p>
@@ -59,17 +60,7 @@ with st.container():
     </div>
     ''', unsafe_allow_html=True)
 
-    st.write("Dear Teacher,")
-    st.write("""
-    Today, we celebrate not only your birthday, but also the light and knowledge you've brought into our lives. 
-    Your wisdom, patience, and kindness inspire us daily. Thank you for everything you do.
     
-    May your year ahead be filled with endless opportunities and dreams come true! 🎁🎊
-    """)
-    st.write("With love, ❤️")
-    st.write("Your Grateful Student 🌟")
-    st.markdown('</div>', unsafe_allow_html=True)
-
 # Image placeholder (optional)
 uploaded_file = st.file_uploader("Upload a memorable photo", type=["jpg", "jpeg", "png"])
 if uploaded_file:
