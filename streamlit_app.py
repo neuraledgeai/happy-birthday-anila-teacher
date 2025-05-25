@@ -139,7 +139,7 @@ st.markdown("")
 
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
-    st.markdown("  ")
+    st.markdown(" js sjks sjs sjs  ")
 with col2:
     if st.button("🎁 Open Your Birthday Surprise!"):
         st.success("💖 Surprise! You’ve just unwrapped a treasure chest of gratitude and love! 🎁")
