@@ -87,6 +87,9 @@ with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
         st.balloons()
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
 
+if st.button("🎁 Click to Open Your Gift!"):
+    st.success("✨ Surprise! You’ve received our love and admiration wrapped in gratitude 💝")
+    st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
 
 # Footer
 st.markdown("---")
@@ -98,13 +101,6 @@ st.markdown("""
     > — Mustafa Kemal Atatürk
 """)
 
-st.markdown("""
-    <style>
-    .stApp {
-        background: linear-gradient(to bottom right, #ffe6f0, #ffffff);
-    }
-    </style>
-""", unsafe_allow_html=True)
 
 
 
