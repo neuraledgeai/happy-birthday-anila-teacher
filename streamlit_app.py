@@ -145,6 +145,7 @@ with st.expander("💝 A Heartfelt Note Just for You"):
 
 st.markdown("")
 if st.session_state.get("show_surprise", False):
+    st.markdown('<p style="text-align:center; font-family: \'Quicksand\', sans-serif; font-size:1.3em; color:#FF4081;">🎁 Birthday Gift Received. Open it!</p>', unsafe_allow_html=True)
     if st.button("🎁 Open Your Birthday Surprise!"):
         st.success("💖 Surprise! You’ve just unwrapped a treasure chest of gratitude and love! 🎁")
         st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
