@@ -138,6 +138,8 @@ with st.expander("💝 “A Heartfelt Note Just for You – Open With a Smile �
 st.markdown("")
 
 col1, col2, col3 = st.columns([1, 2, 1])
+with col1:
+    st.markdown("  ")
 with col2:
     if st.button("🎁 Open Your Birthday Surprise!"):
         st.success("💖 Surprise! You’ve just unwrapped a treasure chest of gratitude and love! 🎁")
