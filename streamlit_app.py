@@ -1,4 +1,4 @@
-# Import libraries 
+# Import libraries
 import streamlit as st
 import time
 from streamlit.components.v1 import html
