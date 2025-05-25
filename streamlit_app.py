@@ -3,6 +3,7 @@ import streamlit as st
 import time
 from streamlit.components.v1 import html
 
+has_seen_note = False
 # Set page configuration
 st.set_page_config(
     page_title="Happy Birthday 🎂",
@@ -137,10 +138,11 @@ with st.expander("💝 A Heartfelt Note Just for You"):
         st.markdown("")
         st.markdown('<p style="text-align:center; font-size:1.1em; color:#D81B60; font-family:\'Quicksand\', sans-serif;">🎵 Play your birthday music, and then open your surprise below! 🎁</p>', unsafe_allow_html=True)
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
+        has_seen_note = True
 
 st.markdown("")
-
-if st.button("🎁 Open Your Birthday Surprise!"):
+if has_seen_note:
+    if st.button("🎁 Open Your Birthday Surprise!"):
     st.success("💖 Surprise! You’ve just unwrapped a treasure chest of gratitude and love! 🎁")
     st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
     st.markdown('<p style="text-align:center; font-family: \'Quicksand\', sans-serif; color: #E85A4F; font-size: 1.2em; margin-top:15px;">Hope this brings an extra big smile to your face on your special day!</p>', unsafe_allow_html=True) # New Line
