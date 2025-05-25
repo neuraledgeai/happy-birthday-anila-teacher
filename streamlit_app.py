@@ -173,7 +173,7 @@ st.markdown("""
     }
     </style>
 
-    <div class="signature">💖 Gratefully celebrating you and your wonderful teaching! 💕</div>
+    <div class="signature">💖 Gratefully celebrating you and your truly wonderful teaching! 💕</div>
 """, unsafe_allow_html=True)
 
 
