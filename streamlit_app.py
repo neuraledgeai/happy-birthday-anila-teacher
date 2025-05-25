@@ -9,27 +9,42 @@ st.set_page_config(
     layout="centered",
 )
 
-# Custom CSS styling
 st.markdown("""
     <style>
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255,105,180,0.3);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(255,105,180,0.6);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(255,105,180,0.3);
+            }
+        }
+
         .title {
             font-size: 3em;
             font-weight: bold;
             color: #FF69B4;
             text-align: center;
         }
+
         .subtitle {
             font-size: 1.5em;
             text-align: center;
             color: #ff4b4b;
         }
+
         .message-box {
             background-color: #fff0f5;
             border-radius: 15px;
             padding: 30px;
             margin-top: 30px;
             box-shadow: 0 0 20px rgba(255,105,180,0.4);
+            animation: glow 3s ease-in-out infinite;
         }
+
         .photo {
             display: flex;
             justify-content: center;
@@ -37,6 +52,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Balloon animation
 #st.balloons()
