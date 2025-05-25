@@ -86,49 +86,6 @@ with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
         ''', unsafe_allow_html=True)
         st.balloons()
 
-    
-# Image placeholder (optional)
-uploaded_file = st.file_uploader("Upload a memorable photo", type=["jpg", "jpeg", "png"])
-if uploaded_file:
-    st.image(uploaded_file, caption="Happy moments!", use_column_width=True)
-
-# Embed confetti animation using HTML + JavaScript
-confetti_script = """
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script>
-    const duration = 5 * 1000;
-    const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-    function randomInRange(min, max) {
-        return Math.random() * (max - min) + min;
-    }
-
-    const interval = setInterval(function() {
-        const timeLeft = animationEnd - Date.now();
-
-        if (timeLeft <= 0) {
-            return clearInterval(interval);
-        }
-
-        const particleCount = 50 * (timeLeft / duration);
-        confetti(Object.assign({}, defaults, {
-            particleCount,
-            origin: { x: randomInRange(0.1, 0.9), y: Math.random() - 0.2 }
-        }));
-    }, 250);
-</script>
-"""
-html(confetti_script)
-
-# Optional: Background music
-music_url = st.text_input("Enter background music URL (YouTube or MP3)", "")
-if music_url:
-    if "youtube.com" in music_url or "youtu.be" in music_url:
-        st.video(music_url)
-    else:
-        st.audio(music_url)
-
 # Footer
 st.markdown("---")
 st.markdown("🎈 Created with ❤️ using Streamlit")
