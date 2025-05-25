@@ -95,7 +95,22 @@ if st.button("🎁 Click to Open Your Gift!"):
 # Footer
 st.markdown("---")
 # Something amazing to be done here
-st.markdown("🎈 Created with ❤️ using Streamlit")
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    .signature {
+        font-family: 'Pacifico', cursive;
+        color: #FF69B4;
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 20px;
+    }
+    </style>
+
+    <div class="signature">With all my heart, your ever-grateful student 💕</div>
+""", unsafe_allow_html=True)
+
 
 
 
