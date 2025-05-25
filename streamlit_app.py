@@ -143,9 +143,8 @@ if st.button("🎁 Open Your Birthday Surprise!"):
     st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjllcWE3YnZncTlsOXdkcHIzM3d0cDJqamswNHEyYWhyOWdscXMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iB6I46FbLRqsLliGpI/giphy.gif", width=300)
     st.markdown('<p style="text-align:center; font-family: \'Quicksand\', sans-serif; color: #E85A4F; font-size: 1.2em; margin-top:15px;">Hope this brings an extra big smile to your face on your special day!</p>', unsafe_allow_html=True) # New Line
 
-
 st.markdown('<p style="font-family: \'Quicksand\', sans-serif; text-align:center; font-size:1.25em; color:#D81B60; margin-top: 20px; margin-bottom: 20px;">May your birthday be as bright and wonderful as the positive impact you have on all your students. Happy Birthday once again, Anila Teacher!</p>', unsafe_allow_html=True) # New Line
-st.markdown("---") # existing footer line
+
 # Footer
 st.markdown("---")
 
