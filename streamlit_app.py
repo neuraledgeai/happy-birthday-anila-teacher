@@ -117,7 +117,7 @@ st.markdown('<div class="title">🎉 Happy Birthday, Dear Anila Teacher! 🎂</d
 st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and inspiration!</div>', unsafe_allow_html=True)
 st.markdown("")
 # Message box
-with st.expander("💝 “Message BOX - A Heartfelt Note Just for You – Open With a Smile 😊"):
+with st.expander("💝 A Heartfelt Note Just for You"):
     st.markdown('<div style="text-align:center; font-size:2em;">💌</div>', unsafe_allow_html=True)
     with st.container():
         #st.markdown('<div class="message-box">', unsafe_allow_html=True)
@@ -150,6 +150,7 @@ st.markdown("---")
 st.markdown("""
     > *"To teach is to touch a life forever"*  
     > — Jerry Whittle
+    > *"It is the supreme art of the teacher to awaken joy in creative expression and knowledge."* – Albert Einstein
 """)
 
 st.markdown("""
@@ -165,7 +166,7 @@ st.markdown("""
     }
     </style>
 
-    <div class="signature">💖 Forever grateful, with all my heart 💕</div>
+    <div class="signature">💖 Gratefully celebrating you and your wonderful teaching! 💕</div>
 """, unsafe_allow_html=True)
 
 
