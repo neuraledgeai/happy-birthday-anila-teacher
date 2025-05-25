@@ -93,3 +93,8 @@ st.markdown("---")
 # Something amazing to be done here
 st.markdown("🎈 Created with ❤️ using Streamlit")
 
+st.markdown("""
+    > *"A good teacher is like a candle—it consumes itself to light the way for others."*  
+    > — Mustafa Kemal Atatürk
+""")
+
