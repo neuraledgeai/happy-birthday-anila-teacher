@@ -89,5 +89,5 @@ with st.expander("Message Box (open with a sweet smile!) 😊❤️"):
 # Footer
 st.markdown("---")
 st.markdown("🎈 Created with ❤️ using Streamlit")
-st.audio(data="birthday_song.mpeg")
+st.audio(data="birthday_song.mpeg", bool = True, autoplay = True)
 
