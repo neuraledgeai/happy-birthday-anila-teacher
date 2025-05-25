@@ -196,14 +196,3 @@ document.head.appendChild(style);
 """
 html(floating_hearts)
 
-html("""
-<script>
-confetti({
-    particleCount: 100,
-    spread: 100,
-    origin: { y: 0.6 }
-});
-</script>
-""")
-
-
