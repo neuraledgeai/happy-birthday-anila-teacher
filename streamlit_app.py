@@ -135,6 +135,7 @@ with st.expander("💝 A Heartfelt Note Just for You"):
         ''', unsafe_allow_html=True)
         st.balloons()
         st.markdown("")
+        st.markdown('<p style="text-align:center; font-size:1.1em; color:#D81B60; font-family:\'Quicksand\', sans-serif;">🎵 Tap play to enjoy your birthday tune, and then open your surprise below! 🎁</p>', unsafe_allow_html=True)
         st.audio(data="birthday_song.mpeg", loop = True, autoplay = True)
 
 st.markdown("")
