@@ -39,7 +39,36 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Balloon animation
-st.balloons()
+#st.balloons()
+# Delayed balloon animation (balloon-like effect using confetti)
+balloon_js = """
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+    setTimeout(() => {
+        const defaults = {
+            spread: 70,
+            startVelocity: 30,
+            gravity: 0.3,
+            ticks: 150,
+            zIndex: 0,
+        };
+
+        function shootBalloon() {
+            confetti(Object.assign({}, defaults, {
+                particleCount: 5,
+                origin: { x: Math.random(), y: 1.2 },
+                colors: ['#FF69B4', '#FFD700', '#87CEFA', '#FF4500']
+            }));
+        }
+
+        for (let i = 0; i < 40; i++) {
+            setTimeout(shootBalloon, i * 200);
+        }
+    }, 5000);  // 5 seconds delay
+</script>
+"""
+
+html(balloon_js)
 
 # Title and subtitle
 st.markdown('<div class="title">🎉 Happy Birthday, Dear Anila Teacher! 🎂</div>', unsafe_allow_html=True)
