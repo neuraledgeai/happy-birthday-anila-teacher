@@ -115,6 +115,7 @@ html(balloon_loop_js)
 # Title and subtitle
 st.markdown('<div class="title">🎉 Happy Birthday, Dear Anila Teacher! 🎂</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and inspiration!</div>', unsafe_allow_html=True)
+st.markdown('<p style="text-align:center; font-family: \'Quicksand\', sans-serif; color: #4A4A4A; font-size: 1.1em; margin-top: 5px;">This little corner of the internet is dedicated to celebrating you today!</p>', unsafe_allow_html=True)
 st.markdown("")
 # Message box
 with st.expander("💝 A Heartfelt Note Just for You"):
@@ -153,7 +154,7 @@ st.markdown("""
 """)
 st.markdown("""
     > *"It is the supreme art of the teacher to awaken joy in creative expression and knowledge."*  
-    > — JAlbert Einstein
+    > — Albert Einstein
 """)
 
 st.markdown("""
