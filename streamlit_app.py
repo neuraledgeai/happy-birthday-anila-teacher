@@ -122,7 +122,7 @@ st.markdown("")
 # Message box
 with st.expander("💝 A Heartfelt Note Just for You"):
     st.markdown('<div style="text-align:center; font-size:2em;">💌</div>', unsafe_allow_html=True)
-    with st.container():
+    with st.container(): 
         #st.markdown('<div class="message-box">', unsafe_allow_html=True)
         st.markdown('''
         <div class="message-box">
