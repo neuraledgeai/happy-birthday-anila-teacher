@@ -114,5 +114,8 @@ st.markdown("""
     <div class="signature">With all my heart, your ever-grateful student 💕</div>
 """, unsafe_allow_html=True)
 
+st.image("https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif", width=300)
+
+
 
 
