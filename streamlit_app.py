@@ -98,14 +98,8 @@ st.markdown("""
     > — Mustafa Kemal Atatürk
 """)
 
-.message-box {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 10px rgba(255,105,180,0.3); }
-    50% { box-shadow: 0 0 30px rgba(255,105,180,0.6); }
-    100% { box-shadow: 0 0 10px rgba(255,105,180,0.3); }
-}
+if st.button("🎁 Click to Open Your Gift!"):
+    st.success("✨ Surprise! You’ve received our love and admiration wrapped in gratitude 💝")
+    st.image("https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif", width=300)
 
 
