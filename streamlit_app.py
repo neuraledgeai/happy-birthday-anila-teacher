@@ -71,7 +71,7 @@ st.markdown('<div class="title">🎉 Happy Birthday, Dear Anila Teacher! 🎂</d
 st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and inspiration!</div>', unsafe_allow_html=True)
 st.markdown("")
 # Message box
-with st.expander("Message Box ❤️"):
+with st.expander("Message Box (open with a sweet smile!)❤️"):
     with st.container():
         #st.markdown('<div class="message-box">', unsafe_allow_html=True)
         st.markdown('''
