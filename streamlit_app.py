@@ -48,6 +48,17 @@ st.markdown('<div class="subtitle">Wishing you a day filled with love, joy, and 
 # Message box
 with st.container():
     st.markdown('<div class="message-box">', unsafe_allow_html=True)
+    st.markdown('''
+    <div class="message-box">
+    <p>Dear Teacher,</p>
+    <p>Today, we celebrate not only your birthday, but also the light and knowledge you've brought into our lives. 
+    Your wisdom, patience, and kindness inspire us daily. Thank you for everything you do.</p>
+    <p>May your year ahead be filled with endless opportunities and dreams come true! 🎁🎊</p>
+    <p>With love, ❤️</p>
+    <p>Your Grateful Student 🌟</p>
+    </div>
+    ''', unsafe_allow_html=True)
+
     st.write("Dear Teacher,")
     st.write("""
     Today, we celebrate not only your birthday, but also the light and knowledge you've brought into our lives. 
